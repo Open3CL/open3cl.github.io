@@ -1,0 +1,161 @@
+---
+import developer from '../static/images/developer.png';
+import usage from '../static/images/usage.png';
+import groupchat from '../static/images/groupchat.svg';
+import code from '../static/images/code.svg';
+import qualite from '../static/images/pen&ruller.svg';
+import documentation from '../static/images/document.svg';
+---
+
+<!-- Start features -->
+<section class="background-home_sec_features bg-center py-20 bg-white relative">
+    <div class="container">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-[30px]">
+            <div class="bg-white py-[26px] px-5 rounded-md relative -top-[130px] border border-[#e7e7e7]/50">
+                <div class="flex items-center">
+                    <div class="bg-custom shrink-0 h-[50px] w-[50px] leading-[50px] rounded-lg text-center mr-4">
+                        <i class="mdi mdi-code-tags text-white text-lg"></i>
+                    </div>
+                    <div class="grow">
+                        <h5 class="font-bold text-xl">Un code open source</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white py-[26px] px-5 rounded-md relative -top-[130px] border border-[#e7e7e7]/50">
+                <div class="flex items-center">
+                    <div class="bg-custom shrink-0 h-[50px] w-[50px] leading-[50px] rounded-lg text-center mr-4">
+                        <i class="mdi mdi-account-group-outline text-white text-lg"></i>
+                    </div>
+                    <div class="grow">
+                        <h5 class="font-bold text-xl">Une communauté</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white py-[26px] px-5 rounded-md relative -top-[130px] border border-[#e7e7e7]/50">
+                <div class="flex items-center">
+                    <div class="bg-custom shrink-0 h-[50px] w-[50px] leading-[50px] rounded-lg text-center mr-4">
+                        <i class="mdi mdi-update text-white text-lg"></i>
+                    </div>
+                    <div class="grow">
+                        <h5 class="font-bold text-xl">Mises à jour fréquentes</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1">
+            <div class="text-center">
+                <h2 class="font-bold text-[32px] md:text-[40px] capitalize mb-2 relative z-10">
+
+                    <span class="bg-[#dff1f0] h-[70px] w-[70px] inline-block absolute rounded-full -z-10 -top-[15px]"></span>Une
+                    librairie Javascript utilisable en frontend comme en backend</h2>
+                <p class="text-muted mx-auto text-lg max-w-[600px] mt-6">L'architecture et le langage utilisé permet à
+                    la librairie Open3CL d'être embarquée dans le navigateur ou dans le backend permettant des
+                    traitements unitaires ou en masse sur de gros volumes.</p>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-[30px] mt-16 items-center">
+            <div>
+                <img src={developer.src} alt="developer" class="mx-auto">
+            </div>
+            <div>
+                <h3 class="md:text-[32px] text-2xl leading-[1.4] font-bold">Un code de qualité, pour une librairie
+                    lisible et performante</h3>
+                <div class="space-y-8 mb-4">
+                    <div class="flex items-start gap-5 mt-8">
+                        <div class="grow">
+                            <i class="mdi mdi-check bg-custom text-white text-lg leading-[26px] h-[26px] w-[26px] relative top-1 text-center rounded-full inline-block"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold mb-4">Classes documentées</h3>
+                            <p class="text-[15px] leading-[22px] text-muted">La méthode 3CL est suffisamment complexe
+                                pour ne pas en rajouter. La documentation du code est une de nos priorités.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-5 mt-8">
+                        <div class="grow">
+                            <i class="mdi mdi-check bg-custom text-white text-lg leading-[26px] h-[26px] w-[26px] relative top-1 text-center rounded-full inline-block"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold mb-4">Suivi des versions de la méthode</h3>
+                            <p class="text-[15px] leading-[22px] text-muted">La méthode 3CL évolue, Open3CL aussi. Avec
+                                un changelog et une roadmap clair, il est plus facile de s'y retrouver.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-5 mt-8">
+                        <div class="grow">
+                            <i class="mdi mdi-check bg-custom text-white text-lg leading-[26px] h-[26px] w-[26px] relative top-1 text-center rounded-full inline-block"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold mb-4">La qualité au rendez-vous</h3>
+                            <p class="text-[15px] leading-[22px] text-muted">Chaque calcul est testé pour s'assurer
+                                qu'il correspond à la méthode officielle 3CL. Il est facile d'identifier les anomalies
+                                et de les corriger.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-[30px] mt-16 items-center">
+            <div>
+                <h3 class="text-[32px] font-bold leading-[1.4] max-w-[520px]">La proposition de Open3CL</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-[30px] mt-6">
+                    <div class="">
+                        <div class="bg-gradient-to-r from-white to-custom/20 w-[54px] h-[54px] flex items-center justify-center -rotate-45 leading-[54px] rounded-md ">
+                            <img src={documentation.src} alt="" class="mx-auto inline-block h-[30px] rotate-45">
+                        </div>
+                        <div class="mt-6">
+                            <h5 class="font-bold text-xl">Bien documentée</h5>
+                            <p class="text-muted mt-4">Chaque version est associée à une révision de la méthode 3CL.
+                                A chaque publication une roadmap est mise en oeuvre pour réaliser les modifications au
+                                plus vite et ainsi être toujours à jour.</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="bg-gradient-to-r from-white to-custom/20 w-[54px] h-[54px] flex items-center justify-center -rotate-45 leading-[54px] rounded-md ">
+                            <img src={code.src} alt="Code" class="mx-auto inline-block h-[30px] rotate-45">
+                        </div>
+                        <div class="mt-6">
+                            <h5 class="font-bold text-xl">Facilement intégrable</h5>
+                            <p class="text-muted mt-4">Disponible comme n'importe quelle librairie Javascript,
+                                directement
+                                sur <a class="hover:text-custom" href="https://www.npmjs.com/package/@open3cl/engine"
+                                       target="_blank">NPM</a>. Une mise à jour suffit à obtenir la dernière version
+                                stable.</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="bg-gradient-to-r from-white to-custom/20 w-[54px] h-[54px] flex items-center justify-center -rotate-45 leading-[54px] rounded-md ">
+                            <img src={qualite.src} alt="" class="mx-auto inline-block h-[30px] rotate-45">
+                        </div>
+                        <div class="mt-6">
+                            <h5 class="font-bold text-xl">Qualitative et performante</h5>
+                            <p class="text-muted mt-4">Tous le monde peux contribuer, tous les processus sont outillés
+                                et décrit afin d'obtenir un niveau de qualité homogène et ainsi faire grandir Open3CL en
+                                toute sécurité.</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="bg-gradient-to-r from-white to-custom/20 w-[54px] h-[54px] flex items-center justify-center -rotate-45 leading-[54px] rounded-md ">
+                            <img src={groupchat.src} alt="Communauté" class="mx-auto inline-block h-[30px] rotate-45">
+                        </div>
+                        <div class="mt-6">
+                            <h5 class="font-bold text-xl">Communautaire</h5>
+                            <p class="text-muted mt-4">Supportée par l'association Open3CL et des entreprises
+                                contributrices comme <a href="https://redfroggy.fr" target="_blank">RedFroggy</a> ou <a
+                                        href="https://kardino.fr" target="_blank">Kardino</a>, Open3Cl est ouvert àtous
+                                et toutes.
+                                Une anomalie, une évolution, une documentation a ajouter ou même une idée,
+                                tout peux servir à améliorer Open3CL.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src={usage.src} alt="usage" class="mx-auto">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End features -->

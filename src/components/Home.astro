@@ -1,0 +1,43 @@
+---
+import '../static/styles/background.css';
+import logoCSTB from '../assets/images/cstb_logo.png';
+import logoAdeme from '../assets/images/ademe_logo.png';
+import logoAuditDpe from '../assets/images/dpe_audit.png';
+---
+
+<!-- Start Home -->
+<section class="md:pt-[160px] md:pb-[170px] pt-[100px] pb-[120px] relative bg-cover bg-center bg-themedark">
+    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat w-full h-full background-home_sec_layer-2"></div>
+    <div class="container relative">
+        <div class="grid grid-cols-1 lg:grid-cols-5 items-center gap-[30px]">
+            <div class="lg:col-span-3">
+                <h1 class="mt-4 md:text-[56px] text-[34px] leading-[1.2] text-white">Open3CL, le moteur 3CL libre</h1>
+                <p class="mt-6 text-lg text-white/40">Implémentation libre de la méthode 3CL officielle</p>
+                <div class="mt-12">
+                    <a href="/" class="btn-custom rounded-none">Comment ?</a>
+                </div>
+                <div class="bg-white/[8%] w-full h-px block my-10 md:my-[50px]"></div>
+                <div class="sm:space-y-0 space-y-4">
+                    <div class="items-center sm:inline-block block">
+                        <span class="text-muted capitalize">Nos partenaires :</span>
+                    </div>
+                    <div class="inline-block">
+                        <a href="https://www.cstb.fr/" target="_blank"><img src={logoCSTB.src} alt="Logo du CSTB" class="h-[26px] my-2 mx-3 opacity-70 inline-block"></a>
+                        <a href="https://www.ademe.fr/" target="_blank"><img src={logoAdeme.src} alt="Logo de l'Ademe" class="h-[26px] my-2 mx-3 opacity-70 inline-block"></a>
+                        <a href="https://observatoire-dpe-audit.ademe.fr/" target="_blank"><img src={logoAuditDpe.src} alt="Logo de l'observatoire des DPE" class="h-[26px] my-2 mx-3 opacity-70 inline-block"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:col-span-2">
+                <div class="bg-white py-10 px-5 md:py-[60px] md:px-[30px] rounded">
+                    <h2 class="text-center font-bold text-[32px]">Une librairie 3CL libre et gratuite pour tous</h2>
+                    <p class="text-muted text-center mt-4">Documentée, suivie et supportée par une communauté grandissante</p>
+                    <form action="" class="mt-12 space-y-4">
+                        <a href="/" class="btn-custom rounded-none text-center !mt-8 w-full" type="submit">L'utiliser maintenant</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Start Home -->
