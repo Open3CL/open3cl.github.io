@@ -3981,3 +3981,8 @@ header {
 .\[\&\>span\]\:opacity-10>span {
   opacity: 0.1;
 }
+
+ul {
+  list-style: circle;
+  padding: 20px;
+}
