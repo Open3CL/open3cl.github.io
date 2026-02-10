@@ -1,15 +1,112 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import comment1Image from "../assets/images/comment1.jpeg";
+import comment2Image from "../assets/images/comment2.jpg";
+import comment3Image from "../assets/images/comment3.png";
 ---
 
 <Layout>
-    <!-- Start Home -->
     <section class="bg-[url('../images/home_sec_features.jpg')] bg-center py-20 bg-white relative">
-        <div class="container relative">
-            <div class="grid grid-cols-1 lg:grid-cols-5 items-center gap-[30px]">
-                On vous explique tout, bientôt :)
+        <div class="container relative pt-12">
+            <h2 class="md:text-[32px] text-2xl leading-[1.4] font-bold">Comment l'Open3CL permet de calculer des DPE
+                ?</h2>
+
+            <p class="text-[15px] leading-[22px] text-muted">
+                Le calcul d’un DPE (Diagnostic de Performance Énergétique) repose sur une méthode réglementaire appelée
+                3CL
+                (Calcul de la Consommation Conventionnelle des Logements).
+            </p>
+
+            <div class="gap-10 items-center">
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <div class="p-4">
+                            <img src={comment2Image.src} class="w-full h-[300px] cover" alt="Image représentant une facade d'immeuble d'habitation"/>
+                    </div>
+                    <div>
+                        <div class="space-y-8 mb-4">
+                            <div class="flex items-start gap-5 mt-8">
+                                <div>
+                                    <h3 class="text-lg font-bold mb-4">Qu’est-ce que la méthode 3CL ?</h3>
+                                    <p class="text-[15px] leading-[22px] text-muted">
+                                        La méthode 3CL est la méthode officielle définie par l’État français pour
+                                        estimer :
+                                    </p>
+                                    <ul class="circle text-[15px] leading-[22px] text-muted">
+                                        <li>les consommations d’énergie d’un logement (chauffage, eau chaude,
+                                            refroidissement, éclairage, auxiliaires),
+                                        </li>
+                                        <li>les émissions de gaz à effet de serre associées.</li>
+                                    </ul>
+                                    <p class="text-[15px] leading-[22px] text-muted">
+                                        Elle s’appuie sur des caractéristiques objectives du bâtiment (surface,
+                                        isolation, systèmes de chauffage, ventilation, etc.) et sur des scénarios
+                                        d’usage standardisés, afin de garantir des résultats comparables entre
+                                        logements.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <div class="p-4">
+                        <img src={comment1Image.src} class="w-full h-[300px] cover" alt="Image représentant un DPE"/>
+                    </div>
+                    <div>
+                        <div class="space-y-8 mb-4">
+                            <div class="flex items-start gap-5 mt-8">
+                                <div>
+                                    <h3 class="text-lg font-bold mb-4">À quoi sert la méthode 3CL ?</h3>
+                                    <p class="text-[15px] leading-[22px] text-muted"> La méthode 3CL permet :</p>
+                                    <ul class="circle text-[15px] leading-[22px] text-muted">
+                                        <li>d’attribuer les étiquettes énergie et climat (A à G) du DPE,</li>
+                                        <li>d’évaluer la performance énergétique d’un logement de manière homogène et
+                                            réglementaire,
+                                        </li>
+                                        <li>de servir de base aux obligations légales (vente, location, rénovation
+                                            énergétique).
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <div class="p-4">
+                        <img src={comment3Image.src} class="w-full h-[300px] cover" alt="Image du contenu de la documentation sur la norme 3CL"/>
+                    </div>
+                    <div>
+                        <div class="space-y-8 mb-4">
+                            <div class="flex items-start gap-5 mt-8">
+                                <div>
+                                    <h3 class="text-lg font-bold mb-4">Comment Open3CL s’appuie sur la méthode 3CL
+                                        ?</h3>
+                                    <p class="text-[15px] leading-[22px] text-muted">La documentation de la méthode 3CL
+                                        est publique : ses formules, règles de
+                                        calcul et paramètres sont accessibles dans les textes réglementaires et
+                                        documents techniques officiels.</p>
+                                    <p class="text-[15px] leading-[22px] text-muted">Grâce à cette transparence, Open3CL
+                                        implémente fidèlement la méthode
+                                        3CL sous forme de librairie logicielle :</p>
+                                    <ul class="circle text-[15px] leading-[22px] text-muted">
+                                        <li>les règles de calcul sont traduites en code,</li>
+                                        <li>les données d’entrée décrivent le logement,</li>
+                                        <li>les résultats produits correspondent aux consommations conventionnelles et
+                                            aux indicateurs du DPE.
+                                        </li>
+                                    </ul>
+                                    <p class="text-[15px] leading-[22px] text-muted">Open3CL permet ainsi aux éditeurs
+                                        de logiciels, bureaux d’études ou projets open source de calculer des DPE de
+                                        manière fiable, reproductible et conforme à la méthode officielle, tout en
+                                        s’appuyant sur une implémentation ouverte et vérifiable.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <!-- Start Home -->
 </Layout>

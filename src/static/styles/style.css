@@ -1415,6 +1415,10 @@ button:focus {
   height: 400px;
 }
 
+.h-\[300px\] {
+  height: 300px;
+}
+
 .h-\[3px\] {
   height: 3px;
 }
@@ -3982,7 +3986,11 @@ header {
   opacity: 0.1;
 }
 
-ul {
+ul.circle {
   list-style: circle;
   padding: 20px;
+}
+
+.cover {
+  object-fit: cover;
 }
