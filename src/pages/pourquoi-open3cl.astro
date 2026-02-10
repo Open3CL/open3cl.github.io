@@ -1,15 +1,112 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import pourquoi1Image from "../assets/images/pourquoi1.jpeg";
+import pourquoi2Image from "../assets/images/pourquoi2.jpeg";
+import pourquoi3Image from "../assets/images/pourquoi3.jpg";
 ---
 
 <Layout>
-    <!-- Start Home -->
     <section class="bg-[url('../images/home_sec_features.jpg')] bg-center py-20 bg-white relative">
-        <div class="container relative">
-            <div class="grid grid-cols-1 lg:grid-cols-5 items-center gap-[30px]">
-                On vous explique tout, bientôt :)
+        <div class="container relative pt-12">
+            <h2 class="md:text-[32px] text-2xl leading-[1.4] font-bold">Pourquoi Open3CL ?</h2>
+
+            <p class="text-[15px] leading-[22px] text-muted">
+                Open3CL est né d'un besoin très concret.
+            </p>
+
+            <div class="gap-10 items-center">
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <div class="p-4">
+                        <img src={pourquoi1Image.src} class="w-full h-[300px] cover" alt=""/>
+                    </div>
+                    <div>
+                        <div class="space-y-8 mb-4">
+                            <div class="flex items-start gap-5 mt-8">
+                                <div>
+                                    <h3 class="text-lg font-bold mb-4">L'origine de Open3CL</h3>
+                                    <p class="text-[15px] leading-[22px] text-muted mb-4">
+                                        À l’origine du projet, Jack Halford (<a href="https://github.com/jzck" target="_blank">jzck sur GitHub</a>) cherchait,
+                                        dans le cadre de son activité professionnelle, à simuler des DPE sans devoir faire intervenir un diagnostiqueur à chaque itération.
+                                        Les outils existants ne permettaient ni la rapidité, ni la souplesse nécessaires pour tester des scénarios ou comparer des travaux.
+                                    </p>
+                                    <p class="text-[15px] leading-[22px] text-muted mb-4">
+                                        Très vite, <a href="https://redfroggy.fr">Red Froggy</a> et son client <a href="https://kardino.fr/">Kardino</a> ont décidé de faire un choix fort :
+                                        prendre le risque d’utiliser massivement cette librairie open source comme moteur de calcul au cœur de leur application métier.
+                                    </p>
+                                    <p class="text-[15px] leading-[22px] text-muted">
+                                        Ce choix s’est imposé après plusieurs constats :
+                                    </p>
+                                    <ul class="circle text-[15px] leading-[22px] text-muted">
+                                        <li>la librairie officielle proposée par l'État ne répondait pas aux besoins concrets du projet</li>
+                                        <li>elle ne permettait pas les simulations de travaux en masse</li>
+                                        <li>elle n’était pas adaptée à un usage SaaS</li>
+                                        <li>et surtout, elle ne proposait pas la transparence nécessaire sur le code source et l’implémentation réelle de la norme 3CL.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <div>
+                        <div class="space-y-8 mb-4">
+                            <div class="flex items-start gap-5 mt-8">
+                                <div>
+                                    <h3 class="text-lg font-bold mb-4">Une vision commune : une 3CL libre et transparente</h3>
+                                    <p class="text-[15px] leading-[22px] text-muted mb-4">
+                                        Au-delà des aspects techniques, les trois acteurs se sont retrouvés autour d’une conviction forte.
+                                    </p>
+                                    <p class="text-[15px] leading-[22px] text-muted">
+                                        À une période où les DPE prennent une importance croissante, tant réglementaire qu’économique, il est essentiel de disposer d’un moteur de calcul :
+                                    </p>
+                                    <ul class="circle text-[15px] leading-[22px] text-muted">
+                                        <li>transparent</li>
+                                        <li>facilement utilisable</li>
+                                        <li>auditable</li>
+                                        <li>et ouvert à la communauté.</li>
+                                    </ul>
+                                    <p class="text-[15px] leading-[22px] text-muted mb-4">
+                                        Bref, une librairie libre, au sens technique comme philosophique.
+                                    </p>
+                                    <p class="text-[15px] leading-[22px] text-muted mb-4">
+                                        C’est ainsi qu’Open3CL est passé d’une librairie développée pour un usage personnel à un moteur utilisé dans plusieurs applications commerciales,
+                                        porté par une communauté de contributeurs en constante croissance.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <img src={pourquoi2Image.src} class="w-full h-[300px] cover" alt=""/>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <div class="p-4">
+                        <img src={pourquoi3Image.src} class="w-full h-[300px] cover" alt=""/>
+                    </div>
+                    <div>
+                        <div class="space-y-8 mb-4">
+                            <div class="flex items-start gap-5 mt-8">
+                                <div>
+                                    <h3 class="text-lg font-bold mb-4">Un projet soutenu par des professionnels</h3>
+                                    <p class="text-[15px] leading-[22px] text-muted">
+                                        Des entreprises comme <a href="https://redfroggy.fr">Red Froggy</a> ou <a href="https://kardino.fr/">Kardino</a> contribuent activement au projet, en mettant à disposition :
+                                    </p>
+                                    <ul class="circle text-[15px] leading-[22px] text-muted">
+                                        <li>des développeurs expérimentés</li>
+                                        <li>des thermiciens</li>
+                                        <li>du temps</li>
+                                        <li>et des cas d’usage réels.</li>
+                                    </ul>
+                                    <p class="text-[15px] leading-[22px] text-muted mb-4">
+                                        L’objectif est clair : <b>faire d’Open3CL la référence française des moteurs 3CL open source</b>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <!-- Start Home -->
 </Layout>

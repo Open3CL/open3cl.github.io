@@ -1,0 +1,62 @@
+---
+import Layout from '../layouts/Layout.astro';
+import tutorial from "../static/videos/tutorial-demonstrateur.mp4";
+---
+
+<Layout>
+    <section class="bg-[url('../images/home_sec_features.jpg')] bg-center py-20 bg-white relative">
+        <div class="container relative pt-12">
+            <h2 class="md:text-[32px] text-2xl leading-[1.4] font-bold">Tester en ligne l'Open3CL et faite vous une idée</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-[30px] items-center">
+                <div>
+                    <video controls width="w-full">
+                        <source src={tutorial} type="video/mp4" />
+                    </video>
+                </div>
+                <div>
+                    <div class="space-y-8 mb-4">
+                        <div class="flex items-start gap-5 mt-8">
+                            <div class="grow">
+                                <i class="mdi bg-custom text-white text-lg leading-[26px] h-[26px] w-[26px] relative top-1 text-center rounded-full inline-block">1</i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold mb-4">Trouver un DPE</h3>
+                                <p class="text-[15px] leading-[22px] text-muted">C'est très simple, les DPE sont des données publiques, disponible sur le
+                                    site de l'<a class="text-custom lightbox" href="https://www.ademe.fr/" target="_blank">ADEME</a>.
+                                </p>
+                                <p class="text-[15px] leading-[22px] text-muted mt-2">Vous pouvez trouver le DPE de vos rèves
+                                    <a class="text-custom lightbox" href="https://observatoire-dpe-audit.ademe.fr/donnees-dpe-publiques" target="_blank">sur le site de l'ADEME</a>.
+                                    Une fois le numéro ADEME copié (2633E0149229B par exemple), cliquez sur le bouton "Trouver un DPE ou un AUDIT" en haut à droite, ou rendez-vous sur l'espace
+                                    <a class="text-custom lightbox" href="https://observatoire-dpe-audit.ademe.fr/accueil" target="_blank">Observatoire des DPE</a>.</p>
+                                <p class="text-[15px] leading-[22px] text-muted mt-2">Recherchez le DPE par son numéro et télécharger les données brutes XML.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-5 mt-8">
+                            <div class="grow">
+                                <i class="mdi bg-custom text-white text-lg leading-[26px] h-[26px] w-[26px] relative top-1 text-center rounded-full inline-block">2</i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold mb-4">Rendez-vous sur notre démonstrateur</h3>
+                                <p class="text-[15px] leading-[22px] text-muted">Un démonstrateur en ligne est disponible :
+                                    <a class="text-custom lightbox" href="https://open3cl.github.io/engine/build/" target="_blank">ouvrir le démonstrateur</a>.
+                                    Déposer le fichier XML du DPE nouvellement télécharger dans l'espace adéquat. Le DPE passe alors par les caluls 3CL de l'Open3CL.
+                                    Un visuel permet de voir les informations du dpe d'origine ainsi que du dpe en sortie de la librairie ainsi qu'un différentiel.
+                                    C'est un bon moyen de détecter un éventuel problème dans le DPE ou la librairie.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-5 mt-8">
+                            <div class="grow">
+                                <i class="mdi bg-custom text-white text-lg leading-[26px] h-[26px] w-[26px] relative top-1 text-center rounded-full inline-block">3</i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold mb-4">Amusez-vous !</h3>
+                                <p class="text-[15px] leading-[22px] text-muted">Vous pouvez désormais modifier des données d'entrée du DPE d'origine (à gauche)
+                                    et voir l'impact directement (à droite).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>
